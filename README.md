@@ -119,6 +119,7 @@ Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars k
     * Başvuru Kılavuzları
     
     * Katkı
-      
-      ## Kaynakça:
+
+## Kaynakça:
+
 * [Polars Kullanım Kılavuzu - Polars User Guide ](https://www.pola.rs/)
