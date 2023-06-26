@@ -29,7 +29,7 @@ Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars k
    * [Veri Tipleri](03_Kavramlar/01_veri_tipleri.md)
    * [Veri Yapıları](03_Kavramlar/02_veri_yapilari.md)
    * [Bağlamlar](03_Kavramlar/03_baglamlar.md)
-   * [İfadeler](03_Kavramlar/04_ifadeler)
+   * [İfadeler](03_Kavramlar/04_ifadeler.md)
    * Tembel / İstekli API
    * Akış API'sı
 
