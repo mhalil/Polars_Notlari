@@ -1,41 +1,124 @@
 # Polars Notları
 
-Polars kütüphanesinin kullanımına dair öğrendiklerimi paylaştığım repo.
+Polars kütüphanesinin kullanımına dair öğrendiklerimi ve tercüme çalışmalarımı paylaştığım repo.
 
-## Slogan;
+### Slogan;
 
-Olağanüstü Hızlı DataFrame Kitaplığı
+Polarsi, Olağanüstü Hızlı DataFrame Kitaplığıdır.
 
 ## Polars Nedir?
 
-Polars, Rust programlama dilinde yazılmış ve temel olarak Apache Arrow’u kullanan bir DataFrame kütüphanesidir. Rust dilinde de kullanılabilmesinin yanı sıra, eksiksiz bir Python API’si sunarak Python dilinde de geliştirme yapmanıza olanak sağlayan bu kütüphaneyi ister DataFrame kütüphanesi olarak ister de veri modelleriniz için backend sorgu motoru olarak kullanabilirsiniz. 
+Polars, Rust programlama dilinde yazılmış ve temel olarak `Apache Arrow`’u kullanan bir **DataFrame kütüphanesidir***. Eksiksiz bir Python API’si sunarak Python dilinde de geliştirme yapmanıza olanak sağlar. 
 
 ### Apache Arrow Nedir?
 
-Kendi sitesindeki tanıma göre Apache Arrow, CPU’lar ve GPU’lar gibi modern donanımlarda verimli analitik işlemler için düzenlenmiş, düz ve hiyerarşik veriler için dilden bağımsız bir sütunlu bellek biçimi tanımlar. Arrow, DBMS, sorgu motorları, DataFrame kütüphaneleri arasında aracı görevi görür.
+Apache Arrow, sütunlu verileri işleyen veri analitiği uygulamaları geliştirmek için dilden bağımsız bir yazılım çerçevesidir.
 
-### Polars Kütüphanesinin Özellikleri Nelerdir ?
-
-* Polars, Rust dili ile sıfırdan yazılmış bir Dataframe kütüphanesidir.
-* Polars kütüphanesi, makinedeki tüm kullanılabilir çekirdekleri kullanan bir yapıya sahiptir.
-* Polars, çok fazla paralel işlemi destekler ve birçok işlemi paralel olarak çalıştırabilir.
-* Polars kütüphanesi, dataframe için bir dizin kullanmaz.
-* Polars kütüphanesi, verileri ‘’Apache Arrow” dizilerini kullanarak temsil eder. Apache Arrow dizileri, bellek kullanımı, işlem hesaplaması ve yükleme süresine göre oldukça verimlidir.
-* Polars tembel değerlendirmeyi destekler, pandaslarla çok sık çalıştıysanız farkına varmış olmalısınız ki pandaslar bir ifade ile karşılaştırdığında bu ifadeyi değerlendirip çıktı vermeye odaklanırken, polars sorguyu hedef alarak sorguyu inceler, bellek kullanımını azaltmanın yollarını arayıp, sorguyu daha optimize etmeyi amaçlar.
-
-### Polars’ı Ne Zaman Kullanmalıyım?
+### Polars Kütüphanesini Ne Zaman Kullanmalıyız?
 
 Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars kesinlikle çok iyi bir çözüm.
 
 # KONU BAŞLIKLARI
 
 1. [Giriş](01_giris.md)
+
 2. [Kurulum](02_kurulum.md)
-3. Kavramlar
+
+3. **Kavramlar**
+   
    * [Veri Tipleri](03.1_veri_tipleri.md)
+   * Veri Yapıları
+   * Bağlamlar
+   * İfadeler
+   * Tembel / İstekli API
+   * Akış API'sı
 
-# Kaynakça:
+4. **İfadeler**
+   
+   * Temel Operatörler
+   * Fonksiyonlar
+   * Çevrim (Casting)
+   * Diziler (Strings)
+   * Kümeleme (# Aggregation)
+   * Kayıp Veri
+   * Pencere Fonksiyonları
+   * Katlamalar / Kıvrımlar (Folds)
+   * Listeler ve Diziler
+   * Kullanıcı Tanımlı Fonksiyonlar
+   * Numpy
 
+5. **Dönüşümler**
+   
+   * Birleştirmeler (Joins)
+   
+   * Birleştirmeler (Concatenation)
+   
+   * Özet Tablolar (Pivots)
+   
+   * Eritmeler (Melts)
+   
+   * **Zaman Serileri**
+     
+     * Ayrıştırma (Parsing)
+     
+     * Filtreleme
+     
+     * Gruplama
+     
+     * Yeniden Örnekleme
+     
+     * Zaman dilimleri
+
+6. **Tembel API**
+   
+   * Kullanım
+   
+   * Optimizasyon
+   
+   * Şema
+   
+   * Sorgu Planı
+   
+   * Sorgu yürütme
+
+7. **IO (Girdi / Çıktı)**
+   
+   * CSV
+   
+   * Parquet
+   
+   * JSON dosyaları
+   
+   * Çoklu
+   
+   * Veritabanları
+   
+   * AWS
+   
+   * Google BigQuery
+
+8. **SQL**
+   
+   * Giriş
+   * SHOW TABLES (TABLOLARI GÖSTER)
+   * SELECT (SEÇİM / SEÇMEK)
+   * CREATE (OLUŞTUR)
+   * Ortak Tablo İfadeleri
+
+9. **Taşıma / Göç**
+   
+   * Pandas'tan Gelenler
+   * Apache Spark'tan Gelenler
+
+10. **Çeşitli**
+    
+    * Çoklu İşlem (Multiprocessing)
+    
+    * Alternatifler
+    
+    * Başvuru Kılavuzları
+    
+    * Katkı
+      
+      ## Kaynakça:
 * [Polars Kullanım Kılavuzu - Polars User Guide ](https://www.pola.rs/)
-* [Fethi Tekyaygil - Medium](https://fethitekyaygil.medium.com/verimizi-hangisine-emanet-etmeliyiz-pandaya-m%C4%B1-kutup-ay%C4%B1s%C4%B1na-m%C4%B1-2260df3fc179)
-* [Şule AKÇAY - Medium](https://suleakcaycs.medium.com/python-d%C3%BCnyas%C4%B1nda-yeni-bir-%C3%A7a%C4%9F-o-bi-polars-%EF%B8%8F-8f569bb9f81a)
