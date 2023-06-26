@@ -1,28 +1,26 @@
 # Polars Notları
 
-Polars kütüphanesinin kullanımına dair öğrendiklerimi ve tercüme çalışmalarımı paylaştığım repo.
+**Polars** kütüphanesinin kullanımına dair öğrendiklerimi ve tercüme çalışmalarımı paylaştığım repo.
 
 ![polars](img/polars_github_logo.svg)
 
-### Slogan;
-
-Polarsi, Olağanüstü Hızlı DataFrame Kitaplığıdır.
+**Rust ve Python için Işık Hızında VeriÇerçevesi (DataFrame) Kütüphanesi.**
 
 ## Polars Nedir?
 
-Polars, Rust programlama dilinde yazılmış ve temel olarak `Apache Arrow`’u kullanan bir **DataFrame kütüphanesidir***. Eksiksiz bir Python API’si sunarak Python dilinde de geliştirme yapmanıza olanak sağlar. 
+`Polars`, `Rust` programlama dilinde yazılmış ve temel olarak `Apache Arrow`’u kullanan bir **DataFrame kütüphanesidir**. Veri düzenleme alışkanlıklarını bilen `Polars`, okunabilir ve yüksek performanslı kod oluşturmanızı sağlayacak bir ifade dili kullanarak DataFrame'leri işlemek için tüm özellikleri içeren eksiksiz bir `Python API` 'ı sunar.
 
 ### Apache Arrow Nedir?
 
-Apache Arrow, sütunlu verileri işleyen veri analitiği uygulamaları geliştirmek için dilden bağımsız bir yazılım çerçevesidir.
+`Apache Arrow`, sütunlu verileri işleyen veri analitiği uygulamaları geliştirmek için dilden bağımsız bir yazılım çerçevesidir.
 
 ### Polars Kütüphanesini Ne Zaman Kullanmalıyız?
 
-Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars kesinlikle çok iyi bir çözüm.
+Verimiz `Pandas` için çok büyük, `Spark` için çok küçük olduğunda `Polars`  kütüphanesi iyi bir çözüm olacaktır.
 
 ## Polars - Python
 
-`Python` programlama diline aşina olduğum için, bu repoda `polar` kütüphanesinin  python kodları içinde kullanımına dair bilgi paylaşacağım.
+`Python` programlama diline aşina olduğum için, bu repoda paylaştığım örnekler,  `polar` kütüphanesinin `python` kodları içine dahil edildiği örnekler olacaktır.
 
 ![polars-pyton](img/polars-logo-python.svg)
 
