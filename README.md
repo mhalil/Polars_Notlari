@@ -30,7 +30,9 @@ Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars k
 # KONU BAŞLIKLARI
 
 1. [Giriş](01_giris.md)
-2. 
+2. [Kurulum](02_kurulum.md)
+3. Kavramlar
+   * [Veri Tipleri](03.1_veri_tipleri.md)
 
 # Kaynakça:
 
