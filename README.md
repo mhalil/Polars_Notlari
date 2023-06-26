@@ -2,6 +2,8 @@
 
 Polars kütüphanesinin kullanımına dair öğrendiklerimi ve tercüme çalışmalarımı paylaştığım repo.
 
+![polars](img/polars_github_logo.svg)
+
 ### Slogan;
 
 Polarsi, Olağanüstü Hızlı DataFrame Kitaplığıdır.
@@ -17,6 +19,12 @@ Apache Arrow, sütunlu verileri işleyen veri analitiği uygulamaları geliştir
 ### Polars Kütüphanesini Ne Zaman Kullanmalıyız?
 
 Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars kesinlikle çok iyi bir çözüm.
+
+## Polars - Python
+
+`Python` programlama diline aşina olduğum için, bu repoda `polar` kütüphanesinin  python kodları içinde kullanımına dair bilgi paylaşacağım.
+
+![polars-pyton](img/polars-logo-python.svg)
 
 # KONU BAŞLIKLARI
 
