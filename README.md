@@ -20,5 +20,7 @@ Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars k
 
 
 # Kaynakça:
-[Fethi Tekyaygil - Medium](https://fethitekyaygil.medium.com/verimizi-hangisine-emanet-etmeliyiz-pandaya-m%C4%B1-kutup-ay%C4%B1s%C4%B1na-m%C4%B1-2260df3fc179)
-[Şule AKÇAY - Medium](https://suleakcaycs.medium.com/python-d%C3%BCnyas%C4%B1nda-yeni-bir-%C3%A7a%C4%9F-o-bi-polars-%EF%B8%8F-8f569bb9f81a)
+* [Polars Kullanım Kılavuzu - Polars User Guide ](https://www.pola.rs/)
+* [Fethi Tekyaygil - Medium](https://fethitekyaygil.medium.com/verimizi-hangisine-emanet-etmeliyiz-pandaya-m%C4%B1-kutup-ay%C4%B1s%C4%B1na-m%C4%B1-2260df3fc179)
+* [Şule AKÇAY - Medium](https://suleakcaycs.medium.com/python-d%C3%BCnyas%C4%B1nda-yeni-bir-%C3%A7a%C4%9F-o-bi-polars-%EF%B8%8F-8f569bb9f81a)
+ 
