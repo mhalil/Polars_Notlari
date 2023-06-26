@@ -67,6 +67,6 @@ Tüm  ifadeler paralel olarak çalıştırılır, yani ayrı `Polars` ifadeleri 
 
 Bu, olası ifadeler açısından buzdağının görünen kısmıdır. Bir ton daha var ve bunlar çeşitli şekillerde birleştirilebilir. Bu sayfa, ifadeler kavramına aşina olmanızı amaçlamaktadır, ifadeler bölümünde daha derine ineceğiz.
 
-| << Önceki Bölüm                | Sonraki Bölüm >>     |
-|:------------------------------:|:--------------------:|
-| [Bağlamlar](03.3_baglamlar.md) | Tembel / İstekli API |
+| << Önceki Bölüm              | Sonraki Bölüm >>     |
+|:----------------------------:|:--------------------:|
+| [Bağlamlar](03_baglamlar.md) | Tembel / İstekli API |

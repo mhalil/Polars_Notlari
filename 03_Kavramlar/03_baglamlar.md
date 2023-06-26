@@ -155,6 +155,6 @@ shape: (3, 5)
 Sonuçtan da görebileceğiniz gibi, tüm ifadeler `groupby` bağlamı tarafından 
 tanımlanan gruba uygulanır. Standart `groupby`'nin yanı sıra, `groupby_dynamic` ve `groupby_rolling` de `groupby` bağlamına girişlerdir.
 
-| << Önceki Bölüm                        | Sonraki Bölüm >>             |
-|:--------------------------------------:|:----------------------------:|
-| [Veri Yapıları](03.2_veri_yapilari.md) | [İfadeler](03.4_ifadeler.md) |
+| << Önceki Bölüm                      | Sonraki Bölüm >>           |
+|:------------------------------------:|:--------------------------:|
+| [Veri Yapıları](02_veri_yapilari.md) | [İfadeler](04_ifadeler.md) |

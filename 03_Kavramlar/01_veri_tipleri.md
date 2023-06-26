@@ -27,6 +27,6 @@ Veri türleri şunlardır:
 
 Bu veri türlerinin dahili gösterimi hakkında daha fazla bilgi edinmek için [Arrow sütun biçimini](https://arrow.apache.org/docs/format/Columnar.html) kontrol edin.
 
-| << Önceki Bölüm          | Sonraki Bölüm >>                       |
-|:------------------------:|:--------------------------------------:|
-| [Kurulum](02_kurulum.md) | [Veri Yapıları](03.2_veri_yapilari.md) |
+| << Önceki Bölüm             | Sonraki Bölüm >>                     |
+|:---------------------------:|:------------------------------------:|
+| [Kurulum](../02_kurulum.md) | [Veri Yapıları](02_veri_yapilari.md) |

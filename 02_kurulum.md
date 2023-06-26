@@ -76,8 +76,6 @@ pip install polars[numpy, fsspec]
 
 `Rust`bağımlılıkları hakkında bilgi almak için [bu sayfayı](https://pola-rs.github.io/polars-book/user-guide/installation/#rust) ziyaret edin.
 
-
-
-| << Önceki Bölüm      | Sonraki Bölüm >>                      |
-|:--------------------:|:-------------------------------------:|
-| [Giriş](01_giris.md) | [ Veri Tipleri](03.1_veri_tipleri.md) |
+| << Önceki Bölüm      | Sonraki Bölüm >>                                 |
+|:--------------------:|:------------------------------------------------:|
+| [Giriş](01_giris.md) | [ Veri Tipleri](03_Kavramlar/01_veri_tipleri.md) |
