@@ -21,6 +21,13 @@ Kendi sitesindeki tanıma göre Apache Arrow, CPU’lar ve GPU’lar gibi modern
 ### Polars’ı Ne Zaman Kullanmalıyım?
 Veriniz Pandas için çok büyük, Spark için çok küçük olduğunda Polars kesinlikle çok iyi bir çözüm.
 
+# KONU BAŞLIKLARI
+1. [Giriş](01.giris.md)
+2. 
+
+
+
+
 
 # Kaynakça:
 * [Polars Kullanım Kılavuzu - Polars User Guide ](https://www.pola.rs/)
