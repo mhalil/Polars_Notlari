@@ -75,3 +75,9 @@ pip install polars[numpy, fsspec]
 | timezone   | Saat dilimi desteği, yalnızca şu durumlarda gereklidir: <br/>1. Python < 3.9 kullanıyorsanız ve/veya <br/>2. Windows kullanıyorsanız, aksi halde hiçbir bağımlılık kurulmaz |
 
 `Rust`bağımlılıkları hakkında bilgi almak için [bu sayfayı](https://pola-rs.github.io/polars-book/user-guide/installation/#rust) ziyaret edin.
+
+
+
+| << Önceki Bölüm      | Sonraki Bölüm >>                      |
+|:--------------------:|:-------------------------------------:|
+| [Giriş](01_giris.md) | [ Veri Tipleri](03.1_veri_tipleri.md) |
