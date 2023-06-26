@@ -1,5 +1,8 @@
-# Polars_Notlari
+# Polars Notları
 Polars kütüphanesinin kullanımına dair öğrendiklerimi paylaştığım repo.
+
+## Slogan;
+Olağanüstü Hızlı DataFrame Kitaplığı
 
 ## Polars Nedir?
 Polars, Rust programlama dilinde yazılmış ve temel olarak Apache Arrow’u kullanan bir DataFrame kütüphanesidir. Rust dilinde de kullanılabilmesinin yanı sıra, eksiksiz bir Python API’si sunarak Python dilinde de geliştirme yapmanıza olanak sağlayan bu kütüphaneyi ister DataFrame kütüphanesi olarak ister de veri modelleriniz için backend sorgu motoru olarak kullanabilirsiniz. 
