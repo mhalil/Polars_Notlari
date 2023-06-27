@@ -1,11 +1,11 @@
 # Veri Yapıları
 
-Polars tarafından sağlanan temel temel veri yapıları `Seriler (Series)` ve `VeriÇerçeveleri (DataFrame)`'dir.
+`Polars` tarafından sağlanan temel veri yapıları `Series (Seriler)` ve `DataFrame (VeriÇerçeveleri)`'dir.
 
-# Seriler (Series)
+# Series (Seriler)
 
 Seriler, 1-boyutlu bir veri yapısıdır. Bir dizi içindeki tüm öğeler aynı [Veri 
-Türüne](03.1_veri_tipleri.md) sahiptir. Aşağıdaki kod parçacığı, basit bir `Series` nesnesinin 
+Türüne/Tipine](01_veri_tipleri.md) sahiptir. Aşağıdaki kod parçacığı, basit bir `Series` nesnesinin 
 nasıl oluşturulacağını gösterir.
 
 ```python
@@ -27,9 +27,11 @@ Series: 'a' [i64]
 ]
 ```
 
-# VeriÇerçevesi (DataFrame)
+# DataFrame (VeriÇerçevesi)
 
-VeriÇerçevesi (DataFrame), bir `Seri (Series)` tarafından desteklenen 2-boyutlu bir veri yapısıdır ve bir `Series` koleksiyonunun (ör. liste) soyutlaması olarak görülebilir. Bir `DataFrame` üzerinde yürütülebilen işlemler, `SQL` benzeri bir sorguda  yapılanlara çok benzer. `GROUP BY`, `JOIN`, `PIVOT` yapabilir, aynı zamanda özel işlevler de tanımlayabilirsiniz.
+VeriÇerçevesi (DataFrame), bir `Seri (Series)` tarafından desteklenen 2-boyutlu bir veri yapısıdır ve bir `Series` koleksiyonunun (ör. liste) soyutlaması olarak görülebilir. Bir `DataFrame` üzerinde yürütülebilen işlemler, `SQL` benzeri bir sorguda  yapılanlara çok benzer. `GROUP BY`, `JOIN`, `PIVOT` yapabilir, aynı zamanda özel fonksiyonlar da tanımlayabilirsiniz.
+
+Aşağıda, Sütun bilgileri ve veri türleri / tipleri sırasıyla, Tamsayı (`integer`), Tarih (`datetime`), ve Ondalıklı Sayı (`float`)  olan bir VeriÇerçevesi (`DataFrame`) tanımlanıyor ve çıktısı gösterilyor.
 
 ```python
 df = pl.DataFrame(
@@ -64,14 +66,14 @@ shape: (5, 3)
 └─────────┴─────────────────────┴───────┘
 ```
 
-### Verileri Görüntüleme
+### Verileri Görüntülemek
 
-Bu  bölüm, bir `DataFrame`'deki verileri görüntülemeye odaklanır. Önceki 
-örnekteki DataFrame'i başlangıç ​​noktası olarak kullanacağız.
+Bu  bölüm, bir `DataFrame`'deki verileri görüntülemeye odaklanır. Yukarıdaki 
+örnekteki oluşturulan VeriÇerçevesini (DataFrame'i) başlangıç ​​noktası olarak kullanacağız ve aşağıda anlatılan komutlar / metotlar, bu VeriÇerçevesi ve içeriğindeki verielr kullanılarak anlatılacak.
 
 #### Head
 
-`head` metodu varsayılan olarak bir `VeriÇerçevesi (DataFrame)`'in ilk 5 satırını görüntüler.  İsterseniz, görmek istediğiniz satır sayısını metod içinde parametre olarak belirtebilirsiniz (ör. `df.head(10)`).
+`head` metodu varsayılan olarak bir `VeriÇerçevesi (DataFrame)`'in <mark>ilk 5 satırını</mark> görüntüler.  İsterseniz, görmek istediğiniz satır sayısını metod içinde parametre olarak belirtebilirsiniz (ör. `df.head(10)`).
 
 ```python
 print(df.head(3))
@@ -92,7 +94,7 @@ shape: (3, 3)
 
 #### Tail
 
-`tail` o, bir `VeriÇerçevesi (DataFrame)`'in son 5 satırını gösterir. `head` metoduna benzer şekilde görmek istediğiniz satır sayısını da belirtebilirsiniz.
+`tail` metodu, bir `VeriÇerçevesi (DataFrame)`'in <mark>son 5 satırını</mark> gösterir. `head` metoduna benzer şekilde görmek istediğiniz satır sayısını da belirtebilirsiniz. (ör. `df.tail(8)`)
 
 ```python
 print(df.tail(3))
@@ -113,7 +115,7 @@ shape: (3, 3)
 
 #### Sample
 
-DataFrame'inizin verileri hakkında bir izlenim edinmek istiyorsanız, `sample` metodunu da kullanabilirsiniz. `sample` metodu ile, `DataFrame`'den `n` sayıda rasgele satır alırsınız. Bu metot, tıpkı `random` modülündeki `sample` metodu gibi iş görüyor.
+VeriÇerçevenizin (DataFrame'inizin) verileri hakkında bir izlenim edinmek istiyorsanız, `sample` metodunu da kullanabilirsiniz. `sample` metodu ile, `DataFrame`'den `n` sayıda rasgele satır alırsınız. Bu metodu, `random` modülündeki `sample` metoduna benzetebilirsiniz.
 
 ```python
 print(df.sample(2))
@@ -133,7 +135,7 @@ shape: (2, 3)
 
 #### Describe
 
-`Describe` metodu, `DataFrame`'inizin özet istatistiklerini döndürür. VeriÇerçevenizde sayısal değerler varsa, bu metot size birkaç hızlı istatistik bilgisi sağlayacaktır. `Pandas`kütüphanesinin `describe` metodu gibi.
+`Describe` metodu, VeriÇerçevenizin (DataFrame'inizin) özet istatistiklerini döndürür. VeriÇerçevenizde sayısal değerler varsa, bu metot size birkaç hızlı istatistik bilgisi sağlayacaktır. `Pandas`kütüphanesinin `describe` metodu gibi düşünebilirsiniz.
 
 ```python
 print(df.describe())
@@ -157,6 +159,24 @@ shape: (9, 4)
 │ 75%        ┆ 4.0      ┆ null                ┆ 7.0      │
 └────────────┴──────────┴─────────────────────┴──────────┘
 ```
+
+**count** : sütunlarda kaç adet veri olduğunu,
+
+**null_count** : sütunlarda kaç adet kayıp veri olduğunu,
+
+**mean** : sütunlardaki verilerin ortalamasını,
+
+**std** : sütunlardaki verilerin standart sapmasını,
+
+**min**: sütunlardaki verilerin en küçük değerini
+
+**max** : sütunlardaki verilerin en büyük değerini,
+
+**median** : sütunlardaki verilerin Ortanca medyanını,
+
+**%25** : sütunlardaki verilerin medyanın alt çeyreğini (dörttebirliğini),
+
+**%75** : sütunlardaki verilerin medyanın üst çeyreğini (dörttebirliğini) tanımlar
 
 | << Önceki Bölüm                    | Sonraki Bölüm >>             |
 |:----------------------------------:|:----------------------------:|
