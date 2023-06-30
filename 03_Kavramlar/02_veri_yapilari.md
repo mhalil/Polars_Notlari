@@ -73,7 +73,7 @@ Bu  bölüm, bir `DataFrame`'deki verileri görüntülemeye odaklanır. Yukarıd
 
 #### Head
 
-`head` metodu varsayılan olarak bir `VeriÇerçevesi (DataFrame)`'in <mark>ilk 5 satırını</mark> görüntüler.  İsterseniz, görmek istediğiniz satır sayısını metod içinde parametre olarak belirtebilirsiniz (ör. `df.head(10)`).
+`head` metodu varsayılan olarak bir `VeriÇerçevesi (DataFrame)`'in **ilk 5 satırını** görüntüler.  İsterseniz, görmek istediğiniz satır sayısını metod içinde parametre olarak belirtebilirsiniz (ör. `df.head(10)`).
 
 ```python
 print(df.head(3))
@@ -94,7 +94,7 @@ shape: (3, 3)
 
 #### Tail
 
-`tail` metodu, bir `VeriÇerçevesi (DataFrame)`'in <mark>son 5 satırını</mark> gösterir. `head` metoduna benzer şekilde görmek istediğiniz satır sayısını da belirtebilirsiniz. (ör. `df.tail(8)`)
+`tail` metodu, bir `VeriÇerçevesi (DataFrame)`'in **son 5 satırını** gösterir. `head` metoduna benzer şekilde görmek istediğiniz satır sayısını da belirtebilirsiniz. (ör. `df.tail(8)`)
 
 ```python
 print(df.tail(3))
